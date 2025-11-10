@@ -1,20 +1,18 @@
 const express = require('express');
 const morgan = require('morgan');
 const tourRouter = require('./routes/tourRouter');
+const userRouter = require('./routes/userRouter');
 
 const app = express();
 
-// MIDDLEWARES
 app.use(express.json());
 app.use(morgan('dev'));
 
-// ROUTES
 app.use('/api/tours', tourRouter);
+app.use('/api/users', userRouter);
 
-// DEFAULT ROUTE
 app.get('/', (req, res) => {
-  res.send('Welcome to the Tours API 🚀');
+  res.status(200).send('Welcome to the Tours & Users API 🚀');
 });
 
-// EXPORT APP
 module.exports = app;
