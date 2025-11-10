@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "The Forest Hiker",
+    "duration": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "The Sea Explorer",
+    "duration": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "name": "The Snow Adventurer",
+    "duration": 4,
+    "difficulty": "difficult"
+  }
+]
